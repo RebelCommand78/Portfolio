@@ -1,3 +1,5 @@
+/* Navbar Styling */
+
 nav.fixed {
   bottom: inherit;
   left: 0;
@@ -49,33 +51,22 @@ nav .active {
   color: tomato;
 }
 
-/* Home styling */
+.nav {
+  bottom: 0px;
+  left: 0px;
+  height: 50px;
+  border-bottom: tomato solid;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  z-index: 99;
+}
 
-#home {
-  background-color: black;
+.nav-link {
   color: white;
-  text-align: center;
 }
 
-.text {
-  font-family: Century Gothic;
-  font-size: 50px;
-  text-decoration: underline;
-}
-
-.text-home{
-  font-family: Century Gothic;
-  font-size: 50px;
-}
-.cont{
-  max-width: 90%;
-}
-
-.highlight {
-  color: tomato;
-  font-family: Century Gothic;
-  font-size: 50px;
-}
+/* General styling */
 
 section {
   width: 100%;
@@ -93,20 +84,41 @@ section {
   flex-direction: column;
   justify-content: center;
 }
+/* Home styling */
 
-.nav {
-  bottom: 0px;
-  left: 0px;
-  height: 50px;
-  border-bottom: tomato solid;
-  position: absolute;
-  text-align: left;
-  width: 100%;
-  z-index: 99;
+#home {
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
-.nav-link {
-  color: white;
+.text {
+  font-family: Century Gothic;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.text-home{
+  font-family: Century Gothic;
+  font-size: 50px;
+ 
+}
+
+.intro{
+  position: relative;
+  z-index: 0;
+ bottom: 190%;
+  
+}
+
+.btn-outline-light{
+  margin-top: 30px;
+}
+
+.highlight {
+  color: tomato;
+  font-family: Century Gothic;
+  font-size: 50px;
 }
 
 
@@ -114,11 +126,12 @@ section {
 #about {
   background-color: white;
   color: black;
-  text-align: center;
-  
-  
+  text-align: center; 
 }
 
+.cont{
+  max-width: 90%;
+}
 
 .progress{
  width: 100%;
@@ -219,7 +232,7 @@ body {
   
 }
 
-/* Navbar Styling */
+
 
 .flex {
   align-items: center;
@@ -268,4 +281,35 @@ footer .icon-wrap .icon:hover .mdi {
 .mdi {
   vertical-align: middle;
 }
+
+/* canvas */
+
+.animation-wrapper {
+  width: 50%;
+  padding-bottom: 50%;
+  
+}
+
+.sphere-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 580px;
+  height: 580px;
+  margin: -290px 0 0 -290px;
+}
+
+.sphere path {
+  fill: url(#sphereGradient);
+  stroke-width: 1px;
+  stroke: rgba(80,80,80,.35);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+/* @media (min-width: 500px) {
+  .sphere path {
+    stroke-width: .4px;
+  }
+} */
 
