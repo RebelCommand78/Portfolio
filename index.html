@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- stylesheets -->
+    <!-- stylesheets -->
 
     <link
       rel="stylesheet"
@@ -26,10 +26,9 @@
       href="https://codepen.io/juliangarnier/pen/75efae7724dbc3c055e918057fc4aca5.css"
     />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="./style.css" />
-    
+
     <!-- Scripts -->
-    
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -56,6 +55,8 @@
       <!-- Home -->
 
       <section id="home" class="flex height-fix">
+        <!-- Animated sphere -->
+
         <div class="animation-wrapper">
           <div class="sphere-animation">
             <svg
@@ -142,6 +143,9 @@
             </svg>
           </div>
         </div>
+
+        <!-- landing page text -->
+
         <div class="flex">
           <div class="intro">
             <div class="text-home">
@@ -153,6 +157,8 @@
               MY WORK <i class="mdi mdi-arrow-down"></i>
             </a>
           </div>
+
+          <!-- Navbar -->
 
           <nav class="nav link-wrap bg-dark desk">
             <a class="nav-link active" href="#home">Home</a>
@@ -168,19 +174,38 @@
       <!-- About -->
 
       <section id="about" class="flex">
+        <!-- Header text -->
+
         <div class="text">
           ABOUT
         </div>
         <br />
+
+        <!-- about content -->
+
         <div class="cont mb-4">
           <div class="row">
             <div class="info col-sm-6">
+              <div class="prog-header">WHO I AM</div>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
               sed quaerat debitis necessitatibus numquam architecto quasi
               quibusdam beatae voluptatem odio molestiae, explicabo accusamus!
               Earum culpa pariatur ipsa, at totam est.
             </div>
             <div class="bar col-sm-6">
+              <div class="prog-header">PROFICIENCY</div>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped progress-bar-animated "
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  100%
+                </div>
+              </div>
               HTML
               <div class="progress">
                 <div
@@ -199,19 +224,6 @@
                 <div
                   class="progress-bar progress-bar-striped progress-bar-animated "
                   role="progressbar"
-                  style="width: 100%"
-                  aria-valuenow="100"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  100%
-                </div>
-              </div>
-              JavaScript
-              <div class="progress">
-                <div
-                  class="progress-bar progress-bar-striped progress-bar-animated "
-                  role="progressbar"
                   style="width: 60%"
                   aria-valuenow="60"
                   aria-valuemin="0"
@@ -220,7 +232,7 @@
                   60%
                 </div>
               </div>
-              React
+              JavaScript
               <div class="progress">
                 <div
                   class="progress-bar progress-bar-striped progress-bar-animated "
@@ -233,7 +245,7 @@
                   50%
                 </div>
               </div>
-              Node.js
+              React
               <div class="progress">
                 <div
                   class="progress-bar progress-bar-striped progress-bar-animated "
@@ -246,7 +258,7 @@
                   90%
                 </div>
               </div>
-              MySQL
+              Node.js
               <div class="progress">
                 <div
                   class="progress-bar progress-bar-striped progress-bar-animated "
@@ -259,7 +271,7 @@
                   50%
                 </div>
               </div>
-              MongoDB
+              MySQL
               <div class="progress">
                 <div
                   class="progress-bar progress-bar-striped progress-bar-animated"
@@ -272,6 +284,7 @@
                   50%
                 </div>
               </div>
+              MongoDB
             </div>
           </div>
         </div>
@@ -285,6 +298,8 @@
         </div>
       </section>
 
+      <!-- pointed bottom effect -->
+
       <svg
         preserveAspectRatio="none"
         viewBox="0 0 100 102"
@@ -295,6 +310,7 @@
         class="svgcolor-light"
       >
         <path
+          id="point"
           d="M0 0 L50 100 L100 0 Z"
           fill="rgb(156, 154, 255)"
           stroke="rgb(156, 154, 255)"
@@ -371,32 +387,43 @@
             <div class="col-md-3 text-center"></div>
           </div>
         </div>
-      </section>
-      <footer>
-        <a class="btn btn-primary chevron-double-up" href="#home" role="button">
-          <i class="mdi mdi-chevron-double-up"></i>
-        </a>
 
-        <div class="icon-wrap flex row">
-          <a href="https://www.linkedin.com/in/martin-stovall/">
-            <div class="flex icon" id="icon-1">
-              <i class="mdi mdi-linkedin"></i>
-            </div>
+        <footer>
+          <!-- home button -->
+
+          <a
+            class="btn btn-primary chevron-double-up"
+            href="#home"
+            role="button"
+          >
+            <i class="mdi mdi-chevron-double-up"></i>
           </a>
 
-          <a href="https://github.com/RebelCommand78">
-            <div class="flex icon" id="icon-2">
-              <i class="mdi mdi-github-circle"></i>
-            </div>
-          </a>
-        </div>
+          <!-- icon links -->
 
-        <div class="info-box">
-          <div class="footnote">
-            Martin Stovall <span class="highlight-footer">©2020</span>
+          <div class="icon-wrap flex row">
+            <a href="https://www.linkedin.com/in/martin-stovall/">
+              <div class="flex icon" id="icon-1">
+                <i class="mdi mdi-linkedin"></i>
+              </div>
+            </a>
+
+            <a href="https://github.com/RebelCommand78">
+              <div class="flex icon" id="icon-2">
+                <i class="mdi mdi-github-circle"></i>
+              </div>
+            </a>
           </div>
-        </div>
-      </footer>
+
+          <div class="info-box">
+            <div class="footnote">
+              Martin Stovall <span class="highlight-footer">©2020</span>
+            </div>
+          </div>
+        </footer>
+      </section>
     </div>
   </body>
 </html>
+
+

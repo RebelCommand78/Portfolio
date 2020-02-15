@@ -84,6 +84,17 @@ section {
   flex-direction: column;
   justify-content: center;
 }
+
+.text {
+  font-family: Century Gothic;
+  font-size: 50px;
+  text-decoration: underline;
+  margin-bottom: 20PX;
+}
+
+body {
+  background-color: white;
+}
 /* Home styling */
 
 #home {
@@ -92,11 +103,6 @@ section {
   text-align: center;
 }
 
-.text {
-  font-family: Century Gothic;
-  font-size: 50px;
-  text-decoration: underline;
-}
 
 .text-home{
   font-family: Century Gothic;
@@ -107,7 +113,7 @@ section {
 .intro{
   position: relative;
   z-index: 0;
- bottom: 190%;
+ 
   
 }
 
@@ -130,25 +136,32 @@ section {
 }
 
 .cont{
-  max-width: 90%;
+  max-width: 70%;
+}
+
+.prog-header{
+  text-align: center;
+  border-bottom: solid black;
+  width: 100%;
+  font-size: 40px;
 }
 
 .progress{
  width: 100%;
  height: 25px;
+ margin-top: 10px;
  
 }
 
 .progress-bar{
   background-color:rgb(156, 154, 255);
   font-size: 20px;
- 
 font-weight: bolder;
  }
 
 .bar{
 text-align: left;
-font-weight: bolder;
+/* font-weight: bolder; */
 }
 
 /* Portfolio Styling */
@@ -158,12 +171,18 @@ font-weight: bolder;
   text-align: center;
   text-decoration: underline;
 }
+
+
+
 /* Contact Styling */
 #contact {
   background-color: white;
   color: black;
   text-align: center;
   text-decoration: underline;
+  padding-top: 175px;
+  height: calc(90vh);
+
   
 }
 /* footer Styling */
@@ -171,9 +190,10 @@ footer {
   display: block;
   background-color: black;
   position: relative;
-  height: 200px;
+  height: 230px;
   width: 100%;
   padding: 70px 0 50px 0;
+  top: 136px;
 }
 
 footer .chevron-double-up {
@@ -228,9 +248,7 @@ footer .footnote {
   font-family: "Open Sans";
 }
 
-body {
-  
-}
+
 
 
 
@@ -286,7 +304,7 @@ footer .icon-wrap .icon:hover .mdi {
 
 .animation-wrapper {
   width: 50%;
-  padding-bottom: 50%;
+  text-align: center;
   
 }
 
@@ -307,9 +325,9 @@ footer .icon-wrap .icon:hover .mdi {
           backface-visibility: hidden;
 }
 
-/* @media (min-width: 500px) {
+@media (min-width: 500px) {
   .sphere path {
     stroke-width: .4px;
   }
-} */
+}
 
