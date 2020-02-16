@@ -6,9 +6,11 @@ nav.fixed {
   position: fixed;
   top: 0;
 }
+
 nav.fixed.desk {
   animation: popDown 0.5s;
 }
+
 nav .link-wrap {
   background: #333;
   height: 0;
@@ -19,9 +21,11 @@ nav .link-wrap {
   transition: height 0.3s ease-out;
   width: 100%;
 }
+
 nav .link-wrap.visible {
   height: 220px;
 }
+
 nav .link-wrap div {
   cursor: pointer;
   font-size: 12pt;
@@ -29,12 +33,15 @@ nav .link-wrap div {
   text-transform: uppercase;
   transition: color 0.5s;
 }
+
 nav .link-wrap div:first-child {
   padding: 25px 20px 12px 20px;
 }
+
 nav .link-wrap div:hover {
-  color: tomato;
+  color: #FF8552;
 }
+
 nav .mdi-menu {
   font-size: 30pt;
   line-height: 36pt;
@@ -48,14 +55,14 @@ nav .mdi-menu {
   display: none;
 }
 nav .active {
-  color: tomato;
+  color: #FF8552;
 }
 
 .nav {
   bottom: 0px;
   left: 0px;
   height: 50px;
-  border-bottom: tomato solid;
+  border-bottom: #FF8552 solid;
   position: absolute;
   text-align: left;
   width: 100%;
@@ -89,92 +96,126 @@ section {
   font-family: Century Gothic;
   font-size: 50px;
   text-decoration: underline;
-  margin-bottom: 20PX;
+  margin-bottom: 20px;
 }
 
 body {
   background-color: white;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100%;
+
 }
+
+/* Animated shere */
+
+.animation-wrapper {
+  width: 50%;
+  text-align: center;
+}
+
+.sphere-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 580px;
+  height: 580px;
+  margin: -290px 0 0 -290px;
+}
+
+.sphere path {
+  fill: url(#sphereGradient);
+  stroke-width: 1px;
+  stroke: rgba(80, 80, 80, 0.35);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@media (min-width: 500px) {
+  .sphere path {
+    stroke-width: 0.4px;
+  }
+}
+
 /* Home styling */
 
 #home {
-  background-color: black;
+  background-color: #192A51;
   color: white;
   text-align: center;
 }
 
-
-.text-home{
+.text-home {
   font-family: Century Gothic;
   font-size: 50px;
- 
 }
 
-.intro{
+.intro {
   position: relative;
   z-index: 0;
- 
-  
 }
 
-.btn-outline-light{
+.btn-outline-light {
   margin-top: 30px;
 }
 
 .highlight {
-  color: tomato;
+  color: #FF8552;
   font-family: Century Gothic;
   font-size: 50px;
 }
 
-
 /* About Styling */
+
 #about {
   background-color: white;
   color: black;
-  text-align: center; 
+  text-align: center;
 }
 
-.cont{
+.cont {
   max-width: 70%;
 }
 
-.prog-header{
+.prog-header {
   text-align: center;
   border-bottom: solid black;
   width: 100%;
   font-size: 40px;
 }
 
-.progress{
- width: 100%;
- height: 25px;
- margin-top: 10px;
- 
+.progress {
+  width: 100%;
+  height: 25px;
+  margin-top: 10px;
 }
 
-.progress-bar{
-  background-color:rgb(156, 154, 255);
+.progress-bar {
+  background-color: #AAA1C8;
   font-size: 20px;
-font-weight: bolder;
- }
+  font-weight: bolder;
+}
 
-.bar{
-text-align: left;
-/* font-weight: bolder; */
+.bar {
+  text-align: left;
 }
 
 /* Portfolio Styling */
+
 #portfolio {
-  background-color: rgb(156, 154, 255);
+  background-color: #AAA1C8;
   color: white;
   text-align: center;
   text-decoration: underline;
 }
 
-
-
 /* Contact Styling */
+
 #contact {
   background-color: white;
   color: black;
@@ -182,13 +223,13 @@ text-align: left;
   text-decoration: underline;
   padding-top: 175px;
   height: calc(90vh);
-
-  
 }
+
 /* footer Styling */
+
 footer {
   display: block;
-  background-color: black;
+  background-color: #192A51;
   position: relative;
   height: 230px;
   width: 100%;
@@ -197,7 +238,7 @@ footer {
 }
 
 footer .chevron-double-up {
-  background: rgb(156, 154, 255);
+  background: #AAA1C8;
   cursor: pointer;
   right: 0;
   left: 0;
@@ -207,23 +248,19 @@ footer .chevron-double-up {
   color: black;
   text-align: center;
   width: fit-content;
-
-
 }
 
-.mdi-chevron-double-up::before{
-width: 50px;
-height: 50px;
-line-height: 40pt;
-font-size: 30pt;
-text-align: center;
-
+.mdi-chevron-double-up::before {
+  width: 50px;
+  height: 50px;
+  line-height: 40pt;
+  font-size: 30pt;
+  text-align: center;
 }
 
 footer .chevron-double-up:hover {
-  background: tomato;
+  background: #FF8552;
 }
-
 
 footer .mdi {
   display: inline-block;
@@ -233,24 +270,19 @@ footer .mdi {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
-  
 }
 
 footer .footnote {
   color: #8f9aa7;
   font-size: 10pt;
-  /* margin-top: 35px; */
   opacity: 0.6;
   text-align: center;
 }
-.highlight-footer{
-  color: tomato;
+
+.highlight-footer {
+  color: #FF8552;
   font-family: "Open Sans";
 }
-
-
-
-
 
 .flex {
   align-items: center;
@@ -283,13 +315,14 @@ footer .icon-wrap .mdi {
 }
 
 footer .icon-wrap .icon:hover {
-  background: rgb(156, 154, 255);
+  background: #AAA1C8;
   box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
   transform: scale(0.9);
 }
 footer .icon-wrap .icon:hover .mdi {
   color: #fff;
 }
+
 footer .icon-wrap .icon:hover .mdi {
   -webkit-animation: toBottomFromTop 0.3s forwards;
   -moz-animation: toBottomFromTop 0.3s forwards;
@@ -300,34 +333,4 @@ footer .icon-wrap .icon:hover .mdi {
   vertical-align: middle;
 }
 
-/* canvas */
-
-.animation-wrapper {
-  width: 50%;
-  text-align: center;
-  
-}
-
-.sphere-animation {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 580px;
-  height: 580px;
-  margin: -290px 0 0 -290px;
-}
-
-.sphere path {
-  fill: url(#sphereGradient);
-  stroke-width: 1px;
-  stroke: rgba(80,80,80,.35);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-@media (min-width: 500px) {
-  .sphere path {
-    stroke-width: .4px;
-  }
-}
 

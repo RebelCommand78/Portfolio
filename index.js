@@ -102,13 +102,13 @@ $(function() {
   
   
     // GALLERY
-    $('#gallery').mixItUp({});
+    // $('#gallery').mixItUp({});
   
-    function mixClear() {
-      setTimeout(function() {
-        $('#gallery').removeClass('waypoint');
-      }, 2000);
-    }
+    // function mixClear() {
+    //   setTimeout(function() {
+    //     $('#gallery').removeClass('waypoint');
+    //   }, 2000);
+    // }
   
     // SCROLL ANIMATIONS
     function onScrollInit(items, elemTrigger) {
