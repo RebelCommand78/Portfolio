@@ -13,7 +13,7 @@ nav.fixed.desk {
   
 }
 
-nav .link-wrap {
+nav .navbar {
   background-color: black;
   height: 0;
   max-width: 1200px;
@@ -25,12 +25,12 @@ nav .link-wrap {
   
 }
 
-nav .link-wrap.visible {
+nav .navbar.visible {
   height: 220px;
   
 }
 
-nav .link-wrap div {
+nav .navbar div {
   cursor: pointer;
   font-size: 12pt;
   padding: 12px 20px;
@@ -39,35 +39,22 @@ nav .link-wrap div {
   
 }
 
-nav .link-wrap div:first-child {
+nav .navbar div:first-child {
   padding: 25px 20px 12px 20px;
   
 }
 
-nav .link-wrap div:hover {
+nav .navbar div:hover {
   color: #FF8552;
 }
 
-nav .mdi-menu {
-  font-size: 30pt;
-  line-height: 36pt;
-  margin: auto 0;
-  position: absolute;
-  right: 5vw;
-  top: 0;
-}
-
-nav .mdi-menu {
-  display: none;
-}
-nav .active {
+.active {
   color: #FF8552;
 }
 
-.nav {
+nav {
   bottom: 0px;
   left: 0px;
-  height: 60px;
   border-bottom: #FF8552 solid;
   position: absolute;
   text-align: left;
@@ -75,8 +62,8 @@ nav .active {
   z-index: 99;
   font-family: Century Gothic;
   font-size: 20px;
- padding-top: 10px;
- padding-left: 200px;
+  display: flex;
+
   
 }
 
@@ -132,13 +119,7 @@ body {
 
 }
 
-.svgpurple{
-  background-color: white;
-}
 
-.svgwhite{
-  background-color: #AAA1C8;
-}
 
 /* @media screen and (max-width: 400px) {
   section:nth-of-type(3) #gallery .mix .card {
@@ -150,89 +131,89 @@ body {
   body {
     font-size: 12pt;
   } */
-
+  
   /* @media screen and (min-width: 1280px) {
     section:nth-of-type(4) .blog-wrap {
       margin: 0 0 50px 20px;
       width: 270px;
     }
   } */
-
+  
   /* @media screen and (min-width: 960px) {
     .waypoint {
       opacity: 0;
     } */
-/* Animated shere */
+    /* Animated shere */
+    
+    .animation-wrapper {
+      width: 50%;
+      text-align: center;
+    }
+    
+    .sphere-animation {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 580px;
+      height: 580px;
+      margin: -290px 0 0 -290px;
+    }
+    
+    .sphere path {
+      fill: url(#sphereGradient);
+      stroke-width: 1px;
+      stroke: rgba(80, 80, 80, 0.35);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    
+    @media (min-width: 900px) {
+      .sphere path {
+        stroke-width: 0.4px;
+      }
+    }
+    
+    /* Home styling */
+    
+    #home {
+      background-color: #192A51;
+      color: white;
+      text-align: center;
+    }
+    
+    .text-home {
+      font-family: Century Gothic;
+      font-size: 50px;
+    }
+    
+    .intro {
+      position: relative;
+      z-index: 0;
+    }
 
-.animation-wrapper {
-  width: 50%;
-  text-align: center;
-}
+    .btn-outline-light {
+      margin-top: 30px;
+    }
 
-.sphere-animation {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 580px;
-  height: 580px;
-  margin: -290px 0 0 -290px;
-}
-
-.sphere path {
-  fill: url(#sphereGradient);
-  stroke-width: 1px;
-  stroke: rgba(80, 80, 80, 0.35);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-@media (min-width: 500px) {
-  .sphere path {
-    stroke-width: 0.4px;
-  }
-}
-
-/* Home styling */
-
-#home {
-  background-color: #192A51;
-  color: white;
-  text-align: center;
-}
-
-.text-home {
-  font-family: Century Gothic;
-  font-size: 50px;
-}
-
-.intro {
-  position: relative;
-  z-index: 0;
-}
-
-.btn-outline-light {
-  margin-top: 30px;
-}
-
-.highlight {
-  color: #FF8552;
-  font-family: Century Gothic;
-  font-size: 50px;
-}
-
-/* About Styling */
-
-#about {
-  background-color: white;
-  color: black;
-  text-align: center;
-  font-size: 16pt;
-}
-
-.cont {
-  max-width: 70%;
-}
-
+    .highlight {
+      color: #FF8552;
+      font-family: Century Gothic;
+      font-size: 50px;
+    }
+    
+    /* About Styling */
+    
+    #about {
+      background-color: white;
+      color: black;
+      text-align: center;
+      font-size: 16pt;
+    }
+    
+    .cont {
+      max-width: 70%;
+    }
+    
 #me{
   margin-top: 20px;
 }
@@ -262,6 +243,10 @@ body {
   text-align: left;
 }
 
+.svgwhite{
+  background-color: #AAA1C8;
+}
+
 /* Portfolio Styling */
 
 #portfolio {
@@ -272,6 +257,9 @@ body {
   
 }
 
+.svgpurple{
+  background-color: white;
+}
 /* Contact Styling */
 
 #contact {
