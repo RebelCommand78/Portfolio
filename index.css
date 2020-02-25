@@ -5,57 +5,23 @@ nav.fixed {
   left: 0;
   position: fixed;
   top: 0;
-  
 }
 
 nav.fixed.desk {
   animation: popDown 0.5s;
-  
+
 }
 
-nav .navbar {
-  background-color: black;
-  height: 0;
-  max-width: 1200px;
-  overflow: hidden;
-  position: absolute;
-  top: 53px;
-  transition: height 0.3s ease-out;
-  width: 100%;
-  
-}
-
-nav .navbar.visible {
-  height: 220px;
-  
-}
-
-nav .navbar div {
-  cursor: pointer;
-  font-size: 12pt;
-  padding: 12px 20px;
-  text-transform: uppercase;
-  transition: color 0.5s;
-  
-}
-
-nav .navbar div:first-child {
-  padding: 25px 20px 12px 20px;
-  
-}
-
-nav .navbar div:hover {
-  color: #FF8552;
-}
-
-.active {
-  color: #FF8552;
+@keyframes popDown {
+  0% {
+    transform: translateY(-100px);
+  }
 }
 
 nav {
   bottom: 0px;
   left: 0px;
-  border-bottom: #FF8552 solid;
+  border-bottom: #ff8552 solid;
   position: absolute;
   text-align: left;
   width: 100%;
@@ -63,20 +29,36 @@ nav {
   font-family: Century Gothic;
   font-size: 20px;
   display: flex;
+  
+}
+nav .bg-dark{
+background-color: black;
+}
 
+nav .nav-link {
+  text-transform: uppercase;
   
 }
 
-.nav-link {
+.navbar-dark .navbar-nav .nav-link{
   color: white;
   
 }
 
-.bg-dark{
-  background-color: black;
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #ff8552;
 }
 
+.navbar-dark .navbar-nav .nav-item .active{
+  color: #ff8552;
+}
+
+
 /* General styling */
+
+html {
+  scroll-behavior: smooth;
+}
 
 section {
   width: 100%;
@@ -103,118 +85,89 @@ section {
 }
 
 body {
-  
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   position: absolute;
   width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: Century Gothic;
-  
-
 }
 
+.animation-wrapper {
+  width: 50%;
+  text-align: center;
+}
 
+.sphere-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 580px;
+  height: 580px;
+  margin: -290px 0 0 -290px;
+}
 
-/* @media screen and (max-width: 400px) {
-  section:nth-of-type(3) #gallery .mix .card {
-    width: 100vw;
+.sphere path {
+  fill: url(#sphereGradient);
+  stroke-width: 1px;
+  stroke: rgba(80, 80, 80, 0.35);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@media (min-width: 900px) {
+  .sphere path {
+    stroke-width: 0.4px;
   }
-} */
+}
 
-/* @media screen and (min-width: 600px) {
-  body {
-    font-size: 12pt;
-  } */
-  
-  /* @media screen and (min-width: 1280px) {
-    section:nth-of-type(4) .blog-wrap {
-      margin: 0 0 50px 20px;
-      width: 270px;
-    }
-  } */
-  
-  /* @media screen and (min-width: 960px) {
-    .waypoint {
-      opacity: 0;
-    } */
-    /* Animated shere */
-    
-    .animation-wrapper {
-      width: 50%;
-      text-align: center;
-    }
-    
-    .sphere-animation {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 580px;
-      height: 580px;
-      margin: -290px 0 0 -290px;
-    }
-    
-    .sphere path {
-      fill: url(#sphereGradient);
-      stroke-width: 1px;
-      stroke: rgba(80, 80, 80, 0.35);
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-    }
-    
-    @media (min-width: 900px) {
-      .sphere path {
-        stroke-width: 0.4px;
-      }
-    }
-    
-    /* Home styling */
-    
-    #home {
-      background-color: #192A51;
-      color: white;
-      text-align: center;
-    }
-    
-    .text-home {
-      font-family: Century Gothic;
-      font-size: 50px;
-    }
-    
-    .intro {
-      position: relative;
-      z-index: 0;
-    }
+/* Home styling */
 
-    .btn-outline-light {
-      margin-top: 30px;
-    }
+#home {
+  background-color: #192a51;
+  color: white;
+  text-align: center;
+}
 
-    .highlight {
-      color: #FF8552;
-      font-family: Century Gothic;
-      font-size: 50px;
-    }
-    
-    /* About Styling */
-    
-    #about {
-      background-color: white;
-      color: black;
-      text-align: center;
-      font-size: 16pt;
-    }
-    
-    .cont {
-      max-width: 70%;
-    }
-    
-#me{
+.text-home {
+  font-family: Century Gothic;
+  font-size: 50px;
+}
+
+.intro {
+  position: relative;
+  z-index: 0;
+}
+
+.btn-outline-light {
+  margin-top: 30px;
+}
+
+.highlight {
+  color: #ff8552;
+  font-family: Century Gothic;
+  font-size: 50px;
+}
+
+/* About Styling */
+
+#about {
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 16pt;
+}
+
+.cont {
+  max-width: 70%;
+}
+
+#me {
   margin-top: 20px;
 }
 
@@ -233,31 +186,29 @@ body {
 }
 
 .progress-bar {
-  background-color: #AAA1C8;
+  background-color: #aaa1c8;
   font-size: 20px;
   font-weight: bolder;
-  
 }
 
 .bar {
   text-align: left;
 }
 
-.svgwhite{
-  background-color: #AAA1C8;
+.svgwhite {
+  background-color: #aaa1c8;
 }
 
 /* Portfolio Styling */
 
 #portfolio {
-  background-color: #AAA1C8;
+  background-color: #aaa1c8;
   color: white;
   text-align: center;
   text-decoration: underline;
-  
 }
 
-.svgpurple{
+.svgpurple {
   background-color: white;
 }
 /* Contact Styling */
@@ -275,7 +226,7 @@ body {
 
 footer {
   display: block;
-  background-color: #192A51;
+  background-color: #192a51;
   position: relative;
   height: 230px;
   width: 100%;
@@ -284,7 +235,7 @@ footer {
 }
 
 footer .chevron-double-up {
-  background: #AAA1C8;
+  background: #aaa1c8;
   cursor: pointer;
   right: 0;
   left: 0;
@@ -305,7 +256,7 @@ footer .chevron-double-up {
 }
 
 footer .chevron-double-up:hover {
-  background: #FF8552;
+  background: #ff8552;
 }
 
 footer .mdi {
@@ -327,7 +278,7 @@ footer .footnote {
 }
 
 .highlight-footer {
-  color: #FF8552;
+  color: #ff8552;
   font-family: "Open Sans";
 }
 
@@ -362,7 +313,7 @@ footer .icon-wrap .mdi {
 }
 
 footer .icon-wrap .icon:hover {
-  background: #FF8552;
+  background: #ff8552;
   box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
   transform: scale(0.9);
 }
@@ -380,4 +331,8 @@ footer .icon-wrap .icon:hover .mdi {
   vertical-align: middle;
 }
 
-
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+}
