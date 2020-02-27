@@ -9,7 +9,6 @@ nav.fixed {
 
 nav.fixed.desk {
   animation: popDown 0.5s;
-
 }
 
 @keyframes popDown {
@@ -29,41 +28,41 @@ nav {
   font-family: Century Gothic;
   font-size: 20px;
   display: flex;
-  
 }
-.navbar-custom{
-background-color: #262f38;
+.navbar-custom {
+  background-color: #262f38;
 }
 
 nav .nav-link {
   text-transform: uppercase;
-  
 }
 
-.navbar-custom .navbar-nav .nav-link{
+.navbar-custom .navbar-nav .nav-link {
   color: white;
-  
 }
-
 
 .navbar-custom .nav-item .nav-link.active,
 .navbar-custom .nav-item:hover .nav-link {
-color: #ff8552;
+  color: #ff8552;
 }
-
 
 /* General styling */
 
 html {
   scroll-behavior: smooth;
+  margin: 0px;
+  min-height: 100%;
+}
+.full {
+  width: 100%;
 }
 
 section {
-  width: 100%;
+  box-sizing: border-box;
   height: calc(100vh + 53px);
   position: relative;
   align-items: center;
-  display: flex;
+  display:fit-content;
   flex-direction: column;
   justify-content: center;
 }
@@ -83,17 +82,14 @@ section {
 }
 
 body {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
-  position: relative;
+  margin: 0px;
+  overflow-x: hidden;
   width: 100%;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: Century Gothic;
+  box-sizing: border-box;
 }
 
 .animation-wrapper {
@@ -159,6 +155,7 @@ body {
   color: black;
   text-align: center;
   font-size: 16pt;
+  min-height: fit-content;
 }
 
 .cont {
