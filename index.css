@@ -25,7 +25,7 @@ nav {
   text-align: left;
   width: 100%;
   z-index: 99;
-  font-family: Century Gothic;
+  font-family: Century Impact, Charcoal, sans-serif;
   font-size: 20px;
   display: flex;
 }
@@ -75,7 +75,7 @@ section {
 }
 
 .text {
-  font-family: Century Gothic;
+  font-family: Century Impact, Charcoal, sans-serif;
   font-size: 50px;
   text-decoration: underline;
   margin-bottom: 20px;
@@ -88,7 +88,7 @@ body {
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: Century Gothic;
+  font-family: Century Impact, Charcoal, sans-serif;
   box-sizing: border-box;
 }
 
@@ -129,7 +129,7 @@ body {
 }
 
 .text-home {
-  font-family: Century Gothic;
+  font-family: Century Impact, Charcoal, sans-serif;
   font-size: 50px;
 }
 
@@ -144,7 +144,7 @@ body {
 
 .highlight {
   color: #ff8552;
-  font-family: Century Gothic;
+  font-family: Century Impact, Charcoal, sans-serif;
   font-size: 50px;
 }
 
@@ -206,6 +206,7 @@ body {
 .svgpurple {
   background-color: white;
 }
+
 /* Contact Styling */
 
 #contact {
@@ -215,6 +216,50 @@ body {
   text-decoration: underline;
   padding-top: 175px;
   height: calc(90vh);
+}
+
+form{
+    width: 50vh;
+}
+
+input{
+  background-color: #ff8552;
+  color:white;
+  width: 50%;
+  height: 38px;
+  margin-top: 10px;
+  
+}
+
+#full-name{
+  background-color: #192a51;
+  color:white;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 10px;
+  height: 38px;
+  padding-left: 5px;
+}
+
+#email-address{
+  background-color: #192a51;
+  color:white;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 10px;
+  height: 38px;
+  padding-left: 5px;
+}
+
+textarea{
+  background-color: #192a51;
+  color:white;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 10px;
+  height: 150px;
+  padding-left: 5px;
+  padding-top: 5px;
 }
 
 /* footer Styling */
