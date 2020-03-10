@@ -223,16 +223,17 @@ form{
 }
 
 input{
-  background-color: #ff8552;
-  color:white;
+  
   width: 50%;
   height: 38px;
   margin-top: 10px;
   
 }
 
+
+
 #full-name{
-  background-color: #192a51;
+  background-color: #262f38;
   color:white;
   font-weight: bold;
   width: 100%;
@@ -242,7 +243,7 @@ input{
 }
 
 #email-address{
-  background-color: #192a51;
+  background-color: #262f38;
   color:white;
   font-weight: bold;
   width: 100%;
@@ -252,7 +253,7 @@ input{
 }
 
 textarea{
-  background-color: #192a51;
+  background-color: #262f38;
   color:white;
   font-weight: bold;
   width: 100%;
