@@ -173,6 +173,12 @@ body {
   font-size: 40px;
 }
 
+@media screen and (max-width: 600px) {
+  div .prog-header {
+    margin-top: 10px;
+  }
+}
+
 .progress {
   width: 100%;
   height: 25px;
@@ -229,8 +235,6 @@ input{
   margin-top: 10px;
   
 }
-
-
 
 #full-name{
   background-color: #262f38;
